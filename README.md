@@ -1,4 +1,7 @@
 ## README: GradeBook Analyzer
+Author: Chandra Prakash Mishra
+Date: 05/12/2025
+
 
 The `GradeBook Analyzer` is a Python script designed to process student marks, perform statistical analysis, assign grades, and present the results in a clear, formatted manner.
 

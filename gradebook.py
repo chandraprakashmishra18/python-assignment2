@@ -1,7 +1,7 @@
 """
 GradeBook Analyzer
-Author : <Your Name>
-Date   : <Date>
+Author : <Chandra Prakash Mishra>
+Date   : <05/12/2025>
 """
 
 import csv
@@ -87,8 +87,7 @@ def load_from_csv(filename):
     marks = {}
     with open(filename, newline="") as f:
         reader = csv.reader(f)
-        # if file has header, uncomment the next line:
-        # next(reader, None)
+        # next(reader)
         for row in reader:
             if len(row) < 2:
                 continue
@@ -169,11 +168,11 @@ def main():
         print("\n--- Pass / Fail ---")
         print(f"Passed ({len(passed)}): {', '.join(passed)}")
         print(f"Failed ({len(failed)}): {', '.join(failed)}")
-
+        
         # -- Task 6: table  --
         print_results_table(marks, grades)
-
+        
         # repeat or not is already handled by outer while loop
-
 if __name__ == "__main__":
     main()
+
